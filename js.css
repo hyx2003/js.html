@@ -9,3 +9,9 @@ body{
     margin:0;
     padding:0;
 }
+.js{
+    display:inline-block;
+    width:300px;
+    height:400px;
+    background-color: aquamarine;
+}
