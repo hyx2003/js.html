@@ -12,6 +12,7 @@ let hitten = false;
 //定义结束
 let final="";
 let touxiang="";
+console.log(lo1,lo2,lo3);
 while (hitten == false) {
    guess=prompt("我就藏在这7个地方中的3个，你可以输入0——6中的任意一个数字来打我");
    if(!guess){
@@ -23,7 +24,7 @@ while (hitten == false) {
         alert("请你在输入一个正确的方位");
     }else{
         guesses =guesses+1;
-        if (guess == lo1 || guess == lo2 || guess == lo3) {
+        if (guess == lo1 || guess == lo2 || guess == lo3 ) {
             alert("好疼");
         hits = hits + 1;
         if (hits == 3) {
@@ -36,6 +37,6 @@ while (hitten == false) {
 }
 }
 if(hitten){
-   final = "你用了" + guesses + "次打倒我了，" + "你的命中率是" +(3/guesses);}
+   final = "你用了" + guesses + "次打倒我了，" + "你的命中率是" +(3/guesses)*100 + "%";}
 else{final ="你个辣鸡！！！！！！！！！！"}
 alert(final);
